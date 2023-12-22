@@ -1,0 +1,16 @@
+# Calcular potencia de 3 numeros forncidos pelo usuario que serão armazenados em um array
+
+puts "Digite 3 números para calcular a potência de cada um deles: "
+numeros = []
+
+3.times do |i|
+    print "Digite o #{i+1}º número: "
+    numeros << gets.chomp.to_i
+end
+
+potencias = numeros.map do |n|
+    n ** 3
+end
+
+puts "\nOs números digitados são: #{numeros}"
+puts "Os números elevados a potência 3 são: #{potencias}"
